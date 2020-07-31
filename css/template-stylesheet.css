@@ -54,7 +54,7 @@ h3 {
 }
 
 #post1-photo {
-    background-image: url('../Images/Post1/chicken-teriyaki.jpg');
+    background-image: url('../images/post1/chicken-teriyaki.jpg');
 }
 
 .post-photo {
@@ -137,19 +137,19 @@ h3 {
 }
 
 #popular1 {
-    background-image: url('../Images/Popular/Popular1.jpg');
+    background-image: url('../images/popular/popular1.jpg');
 }
 
 #popular2 {
-    background-image: url('../Images/Popular/Popular2.jpg');
+    background-image: url('../images/popular/popular2.jpg');
 }
 
 #popular3 {
-    background-image: url('../Images/Popular/Popular3.jpg');
+    background-image: url('../images/popular/popular3.jpg');
 }
 
 #popular4 {
-    background-image: url('../Images/Popular/Popular4.jpg');
+    background-image: url('../images/popular/popular4.jpg');
 }
 
 #subscribe-box {
