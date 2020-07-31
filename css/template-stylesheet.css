@@ -1,0 +1,220 @@
+body {
+    background-color: white;
+    font-family: 'Optima';
+    color: #333333;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: strong;
+}
+
+a:link {
+    color: #2eb8b8;
+}
+
+a:visited {
+    color: #248f8f;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.desktop-content {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'hd' 'main' 'mn' 'ft';
+    justify-content: center;
+}
+
+.post-teaser {
+    display: grid;
+    font-size: 1.2em;
+}
+
+#post1-photo {
+    background-image: url('../Images/Post1/chicken-teriyaki.jpg');
+}
+
+.post-photo {
+    margin-top: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.more-posts {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: strong;
+}
+
+.menu {
+    grid-area: mn;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-areas: 'social' 'search' 'categories' 'popular';
+    grid-row-gap: 20px;
+}
+
+#search-box {
+    border: 1px solid #2eb8b8;
+    width: 99%;
+    padding: 2% 0% 2% 5px;
+    font-size: 1em;
+}
+
+.social-media {
+    grid-area: social;
+    justify-content: center;
+}
+
+.fa {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    grid-area: categories;
+    margin-bottom: 0;
+}
+
+#categories-list {
+    list-style-type: none;
+    text-transform: uppercase;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.popular {
+    grid-area: popular;
+    padding-right: 10px;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 140px 140px;
+    grid-row-gap: 2%;
+    grid-column-gap: 2%;
+    padding-top: 15px;
+}
+
+.popular-post {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#popular1 {
+    background-image: url('../Images/Popular/Popular1.jpg');
+}
+
+#popular2 {
+    background-image: url('../Images/Popular/Popular2.jpg');
+}
+
+#popular3 {
+    background-image: url('../Images/Popular/Popular3.jpg');
+}
+
+#popular4 {
+    background-image: url('../Images/Popular/Popular4.jpg');
+}
+
+#subscribe-box {
+    margin-top: 15px;
+    border: 1px solid #2eb8b8;
+    font-size: 1.2em;
+    width: 99%;
+    padding: 2% 0 2% 5px;
+    font-size: 1em;
+}
+
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+}
+
+#subscribe-button {
+    margin-top: 15px;
+    border: 1px solid #2eb8b8;
+    padding: 2% 0 2% 0;
+    font-size: 1em;
+    color: #2eb8b8;
+    width: 50%;
+    background: repeating-linear-gradient( 135deg, white, white 2px, #e6e6e6 4px, #e6e6e6 4px)
+}
+
+#subscribe-button:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    grid-area: ft;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+/*changes for biger screens*/
+
+@media(min-width:600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .desktop-content {
+        display: block;
+    }
+    .mobile-content {
+        display: none;
+    }
+    #mobile-logo {
+        display: none;
+    }
+    .menu {
+        max-height: 1200px;
+    }
+}
+
+@media(min-width:1250px) {
+    body {
+        font-size: medium;
+    }
+    .menu {
+        grid-template-rows: 7% 5% 15% 30%;
+        grid-row-gap: 20px;
+    }
+    .post-content {
+        padding-right: 80px;
+    }
+}

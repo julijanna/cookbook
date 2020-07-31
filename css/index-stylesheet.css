@@ -1,0 +1,50 @@
+.content {
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 1fr 1fr;
+}
+
+.post-content {
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+}
+
+.post-teaser {
+  grid-template-rows: 1fr 1fr 0.25fr;
+}
+
+#post2-photo {
+  background-image: url('../Images/Post2/carbonara.jpg');
+}
+
+/*changes for biger screens*/
+
+@media(min-width:600px) {
+  .container {
+    grid-template-columns: 600px;
+    grid-template-areas: 'hd' 'lg' 'main' 'mn' 'ft';
+  }
+  .content {
+    grid-template-rows: 600px 600px;
+  }
+  .popular-grid {
+    grid-template-rows: 250px 250px;
+    margin-bottom: 30px;
+  }
+  .post-content {
+    grid-template-rows: 50px 500px;
+  }
+  .post-teaser {
+    grid-template-rows: 2fr 1fr 0.25fr;
+  }
+}
+
+@media(min-width:1250px) {
+  .container {
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-areas: 'hd hd hd hd' 'lg lg lg lg' 'main main main mn' 'ft ft ft ft';
+  }
+  .popular-grid {
+    grid-template-rows: 140px 140px;
+  }
+}

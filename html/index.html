@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+    <meta content='utf-8' http-equiv='encoding'>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!--<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto'>-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' href='../css/template-stylesheet.css' media='screen' />
+    <link rel='stylesheet' type='text/css' href='../css/header-stylesheet.css' media='screen' />
+    <link rel='stylesheet' type='text/css' href='../css/index-stylesheet.css' media='screen' />
+    <title>BCB Beckers' CookBook</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='header box'>
+            <a href='index.html' class='active mobile-content'><img class='logo-photo mobile-content' id='mobile-logo'
+                    src='../Images/logo-black.png'></a>
+            <div class='header links' id='menu-links'>
+                <a href='fake1'>ABOUT US</a>
+                <a href='fake2'>CATEGORIES</a>
+                <a href='fake3'>TIPS</a>
+                <a href='fake4'>CONTACT</a>
+            </div>
+            <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
+                <i class='fa fa-bars'></i>
+            </a>
+        </div>
+        <div class='logo-welcome desktop-content box'>
+            <div class='logo desktop-content box'>
+                <a href='index.html' class='desktop-content'><img class='logo-photo desktop-content'
+                        src='../Images/logo-black.png'></a>
+            </div>
+            <div class='logo-text desktop-content box'>
+                <h1>Welcome to the Beckers' CookBook!</h1>
+            </div>
+        </div>
+        <div class='content box'>
+            <div class='post-content box' id='post1-box'>
+                <div class='post-title box'>
+                    <h2><a href='post.html'>Low fat chicken teryiaki</a></h2>
+                </div>
+                <div class='post-teaser box'>
+                    <div class='post-photo box' id='post1-photo'>
+                        <!-- <a href='post.html' class='read-more'>dupa</a> -->
+                        <!-- <img src='Post1/chicken-teriyaki.jpg'> -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, <q>consectetur adipiscing</q> elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+                    <div class='read-more box'>
+                        <a href='post.html' class='read-more'>Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class='post-content box' id='post2-box'>
+                <div class='post-title box'>
+                    <h2><a href='fake3'>Traditional Carbonara</a></h2>
+                </div>
+                <div class='post-teaser box'>
+                    <div class='post-photo box' id='post2-photo'>
+                        <!-- <img src='Post1/chicken-teriyaki.jpg'> -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+                    <div class='read-more box'>
+                        <a href='post2.html' class='read-more'>Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class='more-posts box'>
+                <a href='#more' class='more-link'>More posts</a>
+            </div>
+        </div>
+        <div class='menu box'>
+            <div class='social-media box'>
+                <!-- <div class='social-logo' id='fb-logo'>
+                </div>
+                <div class='social-logo' id='insta-logo'>
+                </div> -->
+                <a href='#1' class='fa fa-facebook'></a>
+                <a href='#2' class='fa fa-twitter'></a>
+                <a href='#3' class='fa fa-instagram'></a>
+                <a href='#4' class='fa fa-pinterest'></a>
+                <a href='#4' class='fa fa-youtube'></a>
+            </div>
+            <div class='search box'>
+                <input id='search-box' type='text' placeholder='Search...'>
+            </div>
+            <div class='categories box'>
+                <h3>CATEGORIES</h3>
+                <ul id='categories-list'>
+                    <li><a href='#c1' class='category-link'>Low fat</a></li>
+                    <li><a href='#c2' class='category-link'>High protein</a></li>
+                    <li><a href='#c3' class='category-link'>Traditional</a></li>
+                    <li><a href='#c4' class='category-link'>Vegetarian</a></li>
+                    <li><a href='#c4' class='category-link'>Meat</a></li>
+                    <li><a href='#c6' class='category-link'>Baking</a></li>
+                </ul>
+            </div>
+            <div class='popular box'>
+                <h3>POPULAR</h3>
+                <div class='popular-grid box'>
+                    <div class='popular-post box' id=popular1> </div>
+                    <div class='popular-post box' id=popular2> </div>
+                    <div class='popular-post box' id=popular3> </div>
+                    <div class='popular-post box' id=popular4> </div>
+                </div>
+            </div>
+            <div class='subscribe box'>
+                <h3>NEWSLETTER</h3>
+                <input id='subscribe-box' type='text' placeholder='you@example.com'>
+                <div class='subscribe-button'>
+                    <button type='button' id='subscribe-button'><a href='#s'>Subscribe</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='footer box'>
+        <p>Copyright Malgorzata Becker 2020</p>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+
+</html>

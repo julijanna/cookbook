@@ -1,0 +1,78 @@
+.header {
+    grid-area: hd;
+    overflow: hidden;
+    position: relative;
+    min-height: 70px;
+    margin-bottom: 20px;
+}
+
+.header .links {
+    display: none;
+}
+
+.header a {
+    padding: 0;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header a.icon {
+    display: block;
+    position: absolute;
+    padding-right: 10px;
+    padding-top: 0;
+    margin-top: 0;
+    right: 15px;
+    top: 0px;
+}
+
+.logo-photo {
+    width: 15%;
+    filter: invert(62%) sepia(76%) saturate(401%) hue-rotate(131deg) brightness(86%) contrast(88%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:600px) {
+    .fa-bars {
+        display: none;
+    }
+    .header {
+        grid-area: hd;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        max-height: 30px;
+        min-width: 350px;
+        overflow: none;
+        min-height: 30px;
+        margin-bottom: 0;
+    }
+    .header .links {
+        justify-content: space-between;
+        display: inline-flex;
+        min-height: 30px;
+        min-width: 350px;
+    }
+    .logo-welcome {
+        grid-area: lg;
+        display: grid;
+        grid-template-rows: 55% 25%;
+        justify-content: center;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        grid-row-gap: 30px;
+    }
+    .logo-photo {
+        width: 20%;
+        filter: invert(62%) sepia(76%) saturate(401%) hue-rotate(131deg) brightness(86%) contrast(88%);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+}
