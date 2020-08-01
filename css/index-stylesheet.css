@@ -1,16 +1,22 @@
 .content {
   display: grid;
   grid-area: main;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
 }
 
 .post-content {
-  display: grid;
-  grid-template-rows: 1fr 8fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-teaser {
-  grid-template-rows: 1fr 1fr 0.25fr;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-photo {
+  margin-top: 0;
+  min-height: 200px;
 }
 
 #post2-photo {
@@ -36,6 +42,14 @@
   }
   .post-teaser {
     grid-template-rows: 2fr 1fr 0.25fr;
+    margin-top: 0;
+  }
+  .post-content {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+  }
+  .post-photo {
+    min-height: 250px;
   }
 }
 
@@ -46,5 +60,8 @@
   }
   .popular-grid {
     grid-template-rows: 140px 140px;
+  }
+  .post-photo {
+    min-height: 320px;
   }
 }
